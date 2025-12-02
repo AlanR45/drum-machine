@@ -7,7 +7,7 @@ function App() {
   useEffect(() => {
     const handleKeyDown = (e) => {
       const key = e.key.toUpperCase();
-      const audio = document.getElementById(key.toLowerCase());
+      const audio = document.getElementById(key.toUpperCase());
       if (audio) {
         audio.currentTime = 0;
         audio.play();
@@ -40,13 +40,13 @@ function App() {
         id="heater-1"
         type="button"
         onClick={() => {
-          play("q");
+          play("Q");
         }}
       >
         <audio
           src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/Heater-1.mp3"
           className="clip"
-          id="q"
+          id="Q"
           data-sound="Heater 1"
         ></audio>
         Q
@@ -56,13 +56,13 @@ function App() {
         id="heater-2"
         type="button"
         onClick={() => {
-          play("w");
+          play("W");
         }}
       >
         <audio
           src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/Heater-2.mp3"
           className="clip"
-          id="w"
+          id="W"
           data-sound="Heater 2"
         ></audio>
         W
@@ -72,13 +72,13 @@ function App() {
         id="heater-3"
         type="button"
         onClick={() => {
-          play("e");
+          play("E");
         }}
       >
         <audio
           src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/Heater-3.mp3"
           className="clip"
-          id="e"
+          id="E"
           data-sound="Heater 3"
         ></audio>
         E
@@ -88,13 +88,13 @@ function App() {
         id="heater-4"
         type="button"
         onClick={() => {
-          play("a");
+          play("A");
         }}
       >
         <audio
           src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/Heater-4_1.mp3"
           className="clip"
-          id="a"
+          id="A"
           data-sound="Heater 4"
         ></audio>
         A
@@ -104,13 +104,13 @@ function App() {
         id="clap"
         type="button"
         onClick={() => {
-          play("s");
+          play("S");
         }}
       >
         <audio
           src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/Heater-6.mp3"
           className="clip"
-          id="s"
+          id="S"
           data-sound="Clap"
         ></audio>
         S
@@ -120,13 +120,13 @@ function App() {
         id="open-hh"
         type="button"
         onClick={() => {
-          play("d");
+          play("D");
         }}
       >
         <audio
           src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/Dsc_Oh.mp3"
           className="clip"
-          id="d"
+          id="D"
           data-sound="Open HH"
         ></audio>
         D
@@ -136,13 +136,13 @@ function App() {
         id="kick-n-hat"
         type="button"
         onClick={() => {
-          play("z");
+          play("Z");
         }}
       >
         <audio
           src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/Kick_n_Hat.mp3"
           className="clip"
-          id="z"
+          id="Z"
           data-sound="Kick N Hat"
         ></audio>
         Z
@@ -152,13 +152,13 @@ function App() {
         id="kick"
         type="button"
         onClick={() => {
-          play("x");
+          play("X");
         }}
       >
         <audio
           src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/RP4_KICK_1.mp3"
           className="clip"
-          id="x"
+          id="X"
           data-sound="Kick"
         ></audio>
         X
@@ -168,13 +168,13 @@ function App() {
         id="close-hh"
         type="button"
         onClick={() => {
-          play("c");
+          play("C");
         }}
       >
         <audio
           src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/Cev_H2.mp3"
           className="clip"
-          id="c"
+          id="C"
           data-sound="Close HH"
         ></audio>
         C
